@@ -6,8 +6,11 @@ import {
   UserCircleIcon,
   UserIcon
 } from "@heroicons/react/24/solid";
+import { useState } from "react";
 
 const Header = () => {
+  const [searchInput, setSearchInput] = useState
+
   return (
     <header
       className="sticky top-0 z-50 grid 
