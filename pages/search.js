@@ -42,8 +42,6 @@ const Search = ({ searchResults }) => {
                 star,
                 price,
                 total,
-                long,
-                lat,
               }) => (
                 <InfoCard
                   key={img}
@@ -54,8 +52,6 @@ const Search = ({ searchResults }) => {
                   star={star}
                   price={price}
                   total={total}
-                  long={long}
-                  lat={lat}
                 />
               )
             )}
@@ -63,7 +59,7 @@ const Search = ({ searchResults }) => {
         </section>
 
         <section className="hidden xl:inline-flex xl:min-w-[600px]">
-          <Map />
+          <Map searchResults={searchResults}/>
         </section>
       </main>
 

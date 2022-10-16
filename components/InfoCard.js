@@ -9,8 +9,6 @@ const InfoCard = ({
   star,
   price,
   total,
-  long,
-  lat,
 }) => {
   return (
     <div
